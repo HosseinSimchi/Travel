@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
+import { BlogModule } from './blog/blog.module';
+import { ContactModule } from './contact/contact.module';
+import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +21,10 @@ import { AboutModule } from './about/about.module';
     BrowserModule,
     HomeModule,
     AboutModule,
+    BlogModule,
+    ContactModule,
+    SharedModule,
+    PagesModule,
     AppRoutingModule
   ],
   providers: [],

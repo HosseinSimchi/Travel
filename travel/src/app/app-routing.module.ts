@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeModule } from './home/home.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path : '', loadChildren: () => import("./home/home.module")
-                                  .then((m) => m.HomeModule)},
+                                  .then((m) => m.HomeModule), pathMatch:'full'},
   {path : 'about', loadChildren: () => import("./about/about.module")
                                   .then((m) => m.AboutModule)},
+  {path : 'blogs', loadChildren: () => import("./blog/blog.module")
+                                  .then((m) => m.BlogModule)},
+  {path : 'pages', loadChildren: () => import("./pages/pages.module")
+                                  .then((m) => m.PagesModule)},
+  {path : 'contact', loadChildren: () => import("./contact/contact.module")
+                                  .then((m) => m.ContactModule)},
+  {path : '**' , component : NotFoundComponent, pathMatch:'full'},
 
 ];
 
