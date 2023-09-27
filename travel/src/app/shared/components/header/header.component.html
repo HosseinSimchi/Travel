@@ -22,20 +22,18 @@
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li class="menu-has-children"><a routerLink="/blogs">Blog</a>
+            <li><a routerLink='/'>Home</a></li>
+            <li><a routerLink='/about'>About</a></li>
+            <li class="menu-has-children"><a href="#">
+              Blog
+            </a>
               <ul>
-                <li><a routerLink="blogs">Blog Home</a></li>
-                <li><a routerLink="blogs/single">Blog Single</a></li>
+                <li><a href="#" [routerLink]="['/','single']">Blog Single</a></li>
               </ul>
             </li>
-            <li class="menu-has-children"><a routerLink="pages">Pages</a>
-              <ul>
-                  <li><a routerLink="elements">Elements</a></li>
-              </ul>
+            <li class="menu-has-children"><a [routerLink]="['/','pages']">Pages</a>
             </li>
-            <li><a routerLink="contact">Contact</a></li>
+            <li><a [routerLink]="['/','contact']">Contact</a></li>
           </ul>
         </nav><!-- #nav-menu-container -->
     </div>

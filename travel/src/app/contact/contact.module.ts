@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContacthomeComponent } from './contacthome/contacthome.component';
 import { SharedModule } from '../shared/shared.module';
+import { BannerAreaComponent } from './contacthome/banner-area/banner-area.component';
+import { ContactPageComponent } from './contacthome/contact-page/contact-page.component';
 
 
 @NgModule({
   declarations: [
-    ContacthomeComponent
+    ContacthomeComponent,
+    BannerAreaComponent,
+    ContactPageComponent
   ],
   imports: [
     CommonModule,

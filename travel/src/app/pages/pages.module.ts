@@ -2,18 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { ElementsComponent } from './elements/elements.component';
 import { PageshomeComponent } from './pageshome/pageshome.component';
+import { BannerAreaComponent } from './pageshome/banner-area/banner-area.component';
+import { SampleAreaComponent } from './pageshome/sample-area/sample-area.component';
+import { ButtonComponent } from './pageshome/button/button.component';
+import { AlignAreaComponent } from './pageshome/align-area/align-area.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    ElementsComponent,
-    PageshomeComponent
+    PageshomeComponent,
+    BannerAreaComponent,
+    SampleAreaComponent,
+    ButtonComponent,
+    AlignAreaComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
