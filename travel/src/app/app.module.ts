@@ -10,7 +10,8 @@ import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
-import { RouterModule } from '@angular/router';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { PostsHttpInterceptor } from './interceptors/posts-http.interceptor';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,12 @@ import { RouterModule } from '@angular/router';
     ContactModule,
     SharedModule,
     PagesModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide:HTTP_INTERCEPTORS, useClass:PostsHttpInterceptor, multi:true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
