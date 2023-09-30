@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-",
+      "author": "ffff",
+      "desc": "Thisdescription1 ...."
+    },
+    {
+      "id": 2,
+      "title": "reza",
+      "author": "Simchi",
+      "desc": "this is a edied file description"
+    },
+    {
+      "id": 3,
+      "title": "ali",
+      "author": "Hossein",
+      "desc": "this is a edied file description"
+    },
+    {
+      "id": 4,
+      "title": "json-server4",
+      "author": "typicode4",
+      "desc": "This is a simple description4 ...."
+    },
+    {
+      "id": 5,
+      "title": "json-server5",
+      "author": "typicode5",
+      "desc": "This is a simple description5 ...."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
