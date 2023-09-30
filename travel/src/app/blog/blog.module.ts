@@ -9,7 +9,6 @@ import { TopCategoriesComponent } from './bloghome/top-categories/top-categories
 import { PostContentComponent } from './bloghome/post-content/post-content.component';
 import { BannerAreaSingleComponent } from './single/banner-area-single/banner-area-single.component';
 import { PostContentSingleComponent } from './single/post-content-single/post-content-single.component';
-import { AppRoutingModule } from '../app-routing.module';
 import { BlogRoutingModule } from './blog-routing.module';
 
 
@@ -27,6 +26,10 @@ import { BlogRoutingModule } from './blog-routing.module';
         CommonModule,
         BlogRoutingModule,
         SharedModule
+    ],
+    exports:[
+      SingleComponent,
+      BloghomeComponent
     ]
 })
 export class BlogModule { }

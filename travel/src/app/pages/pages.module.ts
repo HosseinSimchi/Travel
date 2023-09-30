@@ -8,6 +8,7 @@ import { SampleAreaComponent } from './pageshome/sample-area/sample-area.compone
 import { ButtonComponent } from './pageshome/button/button.component';
 import { AlignAreaComponent } from './pageshome/align-area/align-area.component';
 import { SharedModule } from '../shared/shared.module';
+import { BlogModule } from '../blog/blog.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
+    BlogModule,
     SharedModule
   ]
 })

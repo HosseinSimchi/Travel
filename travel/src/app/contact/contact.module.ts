@@ -6,6 +6,7 @@ import { ContacthomeComponent } from './contacthome/contacthome.component';
 import { SharedModule } from '../shared/shared.module';
 import { BannerAreaComponent } from './contacthome/banner-area/banner-area.component';
 import { ContactPageComponent } from './contacthome/contact-page/contact-page.component';
+import { BlogModule } from '../blog/blog.module';
 
 
 @NgModule({

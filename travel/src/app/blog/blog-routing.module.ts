@@ -4,8 +4,8 @@ import { BloghomeComponent } from './bloghome/bloghome.component';
 import { SingleComponent } from './single/single.component';
 
 const routes: Routes = [
-  {path: '', component:BloghomeComponent,pathMatch:"full"},
-  {path: 'single', component:SingleComponent,pathMatch:"full"}
+  {path:'', component:BloghomeComponent, pathMatch:"full"},
+  {path:'blogs/single', component:SingleComponent}
 ];
 
 @NgModule({

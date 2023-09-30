@@ -9,6 +9,9 @@ import { IssuesComponent } from './issues/issues.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
 import { BannerAreaComponent } from './banner-area/banner-area.component';
+import { BloghomeComponent } from '../blog/bloghome/bloghome.component';
+import { SingleComponent } from '../blog/single/single.component';
+import { BlogModule } from '../blog/blog.module';
 
 
 @NgModule({
@@ -23,7 +26,7 @@ import { BannerAreaComponent } from './banner-area/banner-area.component';
     imports: [
         CommonModule,
         HomeRoutingModule,
-        SharedModule
+        SharedModule,
     ]
 })
 export class HomeModule { }
