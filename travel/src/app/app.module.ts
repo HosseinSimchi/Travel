@@ -12,11 +12,15 @@ import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { PostsHttpInterceptor } from './interceptors/posts-http.interceptor';
+import { ButtonComponent } from './components/designedComponents/button/button.component';
+import { DropdownComponent } from './components/designedComponents/Dropdown/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ButtonComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
